@@ -17,7 +17,7 @@ var prefix = "1"
 client.on('ready', function(){
     client.user.setStatus("online");
     var ms = 100000 ;
-    var setGame = [`1mhelp`,`Emerald Bot Shop ❤ ✯`];
+    var setGame = [`1mhelp`,`Emerald Bot Shop ❤ ✯`,`By 'EpicZeyad"SK,♕#5717];
     var i = -1;
     var j = 0;
     setInterval(function (){
