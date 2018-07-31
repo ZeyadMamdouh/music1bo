@@ -12,7 +12,6 @@ const moment = require('moment');
 var Canvas = require('canvas');
 var jimp = require('jimp');
 var prefix = "1"
-const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setActivity('EmeraldBot Shop', {type: 'WATCHING'});
