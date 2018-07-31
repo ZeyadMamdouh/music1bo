@@ -13,10 +13,25 @@ var Canvas = require('canvas');
 var jimp = require('jimp');
 var prefix = "1"
 
-client.on('ready', () => {
-    client.user.setActivity('EmeraldBot Shop', {type: 'WATCHING'});
-});
 
+client.on('ready', function(){
+    client.user.setStatus("online");
+    var ms = 100000 ;
+    var setGame = [`1mhelp`,`Emerald Bot Shop ❤ ✯`];
+    var i = -1;
+    var j = 0;
+    setInterval(function (){
+        if( i == -1 ){
+            j = 1;
+        }
+        if( i == (setGame.length)-1 ){
+            j = -1;
+        }
+        i = i+j;
+        client.user.setGame(setGame[i],`http://www.twitch.tv/KiNg66S`);
+    }, ms);100000
+
+});
 
 
 
