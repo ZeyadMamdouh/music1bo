@@ -1,5 +1,16 @@
 // Discord.js bot
 const Discord = require('discord.js');
+const { Client, Util } = require('discord.js');
+const client = new Client();
+const YouTube = require('simple-youtube-api');
+const ytdl = require('ytdl-core');
+const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
+const queue = new Map();
+const request = require('request');
+const fs = require("fs");
+const moment = require('moment');
+var Canvas = require('canvas');
+var jimp = require('jimp');
 var prefix = "1"
 const client = new Discord.Client();
 
